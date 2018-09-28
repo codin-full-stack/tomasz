@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: grey;
+    background-size: cover;
+    
+}
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 12px;
+    margin: 12px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #8c3881;
+    color: white;
+    padding: 6px 14px;
+    margin: 14px 4;
+    border: none;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.container {
+    padding: 20px;
+    background-color: white;
+    width: 250px;
+    margin: 250px auto;
+}
+
+.paieska {
+    padding: 20px;
+    background-color: white;
+    width: 250px;
+    margin: 250px auto;
+}
+
+.mygtukas {
+    text-align: right;
+    background: white;
+    margin: auto;
+}
+.mygtukasReg {
+    background-color:green;
+    color: white;
+    padding: 6px 14px;
+    margin: -20px 4;
+    border: none;
+    width: 100%;
+
+}
+
+.mygtukasPaieska {
+    text-align: right;
+    background: white;
+    margin: auto;
+    /* overflow: hidden; */
+}
+
+#output{
+    display:none;
+}
+
+.navigation {
+    text-align: center;
+    font-size: 20px;
+    position: fixed;
+    top: 15px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.navigation a {
+    color: rgb(235, 235, 235);
+}
+.linkBack a {
+    color: #FF851B;
+}
+.linkBackList a {
+    color: rgb(251, 255, 0);
+    font-size: 25px;
+    position: fixed;
+    overflow: visible;
+    margin: 800px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.userInfo {
+    padding: 20px;
+    background-color: white;
+    width: 300px;
+    margin: 250px auto;
+}
+
+.title {
+    padding: 20px;
+    background-color: white;
+    width: 250px;
+    margin: 250px auto;
+}
+.textPad {
+    padding: 20px;
+    background-color: white;
+    width: 400px;
+    margin: 250px auto;
+}
+.feed {
+    padding: 80px;
+    background-color: white;
+    width: 900px;
+    margin: 250px auto;
+}
+.allUsers {
+    padding: 40px;
+    background-color: white;
+    width: 400px;
+    margin: 250px auto;
+}
+.comment {
+    padding: 20px;
+    background-color: white;
+    width: 300px;
+    margin: 0px auto;
+}
+.commentsBox {
+    padding: 20px;
+    background-color:white;
+    width: 300px;
+    margin: 0 auto;
+}
