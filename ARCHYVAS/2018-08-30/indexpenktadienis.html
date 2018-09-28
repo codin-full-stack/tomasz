@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>blokas</title>
+<meta name="viewport"
+      content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;
+     background-color: grey;}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 6px 14px;
+    margin: 14px 4;
+    border: none;
+    width: 40%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.container {
+    padding: 16px;
+    background-color: white;
+    width: 250px;
+    margin-top: 350px;
+    margin-left: 750px;
+
+}
+.mygtukas {
+    text-align: right;
+    background: white;
+    margin: auto;
+}
+
+</style>
+</head>
+<body>
+    <form action="action.php" method="POST">
+     <div class="container">
+        <label for="vrd"><b>Vardas</b></label>
+        <input type="text" placeholder="Vardas" name="vrd">
+        <label for="pvd"><b>Pavarde</b></label>
+        <input type="text" placeholder="Pavarde" name="pvd">
+    <div class="mygtukas">
+        <button type="submit">OK</button>
+    </div>
+    </form>
+
+</body>
+</html>
