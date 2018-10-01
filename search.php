@@ -29,10 +29,6 @@ if(isset($_POST['search'])){
 
 ?>
 
-<?php
-echo "ssg0";
-?>
-
 
 
 
