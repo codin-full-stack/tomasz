@@ -20,7 +20,7 @@
             },
             null,
             {
-                "id":"http://localhost:8081/tomasz/form.php",
+                "id":"http://localhost:8081/tomasz/registration.php",
                 "label":"REGISTRACIJA"
             },
             {

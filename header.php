@@ -22,6 +22,7 @@ include('jsonFunctions.php');
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Anton" rel="stylesheet">
 </head>
 <body background="media/bgwp.jpg">
     <div class="navigation">  

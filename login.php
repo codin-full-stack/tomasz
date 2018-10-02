@@ -4,38 +4,46 @@ include 'header.php';
 ?>
 
 
-<div class="container">
-    <form action="" method="POST">
-        <label for="Username"><b>Email</b></label>
-        <input type="text" placeholder="Email" name="email" required>
-        <label for="password"><b>Password</b></label>
-        <input type="password" placeholder="Password" name="pass1" required>
-        <div class="mygtukas">
-            <button type="submit" name="doLogin">Prisijungti</button>
+<html>
+<body>
+    <div class="container">
+        <form action="" method="POST">
+        <div class="buttons">
+            <button type="button" onclick="window.location.href='http://localhost:8081/tomasz/login.php'" class="rButton" required><b>Login</b></button>
+            <button type="button" onclick="window.location.href='http://localhost:8081/tomasz/registration.php'" class="lButton"required>Register</button>
         </div>
-    </form>
-
-<form action="form.php" method="POST">
-    <button class="mygtukasReg" type="submit">Registruotis!</button>
-</form>
-
+        <div class="box">
+            <div class="box-item">
+                <label for="" class="label">
+                    Email<br>
+                </label>
+                <input type="text" name="email" class="field" placeholder="example@gmail.com">
+            </div>
+            <div class="box-item">
+                <label for="" class="label">
+                    Password
+                </label>
+                <input type="password" name="pass1" class="field" placeholder="**********">
+            </div>
+            <div class="box-bottom">
+                <a href="" class="forgot-link">Forgot password?</a>
+                <button name="doLogin" class="sigin">
+                    SignIn
+                </button>
+            </div>
+        </div>
+    </div> 
+    </form>        
+</body> 
+</html>
 <?php
 
 if (!empty($_POST)){
     $email = $_POST['email'];
     $sql = "select * from users where email='$email' ";
- 
-    // var_dump($sql);
- 
     $result = $conn->query($sql);
     $user = $result->fetch_assoc();
- 
-    // var_dump($user);
- 
     $loginpass = md5($_POST['pass1']);
- 
-    // var_dump($loginpass);
- 
     if ($loginpass == $user['password']){
  
         $_SESSION = [
@@ -47,7 +55,7 @@ if (!empty($_POST)){
         echo 'Blogas slaptazodis';
     }
  } else {
-    echo 'Uzpildykite visus laukus';
+    //none
  }
 
 ?>
