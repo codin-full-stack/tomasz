@@ -1,0 +1,53 @@
+{
+    "menu":{
+        "header":"SVG Viewer",
+        "items":[
+            {
+                "id":"http://localhost:8081/tomasz/",
+                "label":"Stories"
+            },
+            {
+                "id":"http://localhost:8081/tomasz/login.php",
+                "label":"Login"
+            },
+            {
+                "id":"http://localhost:8081/tomasz/paieska.php",
+                "label":"Search User"
+            },
+            {
+                "id":"http://localhost:8081/tomasz/allRegisteredList.php",
+                "label":"All registrations"
+            },
+            null,
+            {
+                "id":"http://localhost:8081/tomasz/registration.php",
+                "label":"REGISTRACIJA"
+            },
+            {
+                "id":"http://localhost:8081/tomasz/userInfo.php",
+                "label":"User Info"
+            },
+            null,
+            {
+                "id":"http://localhost:8081/tomasz/infoChange",
+                "label":"Change user Info"
+            },
+            {
+                "id":"http://localhost:8081/tomasz/post_new.php",
+                "label":"Post new story"
+            },
+            {
+                "id":"http://localhost:8081/tomasz/myPosts.php",
+                "label":"My Stories"
+            },
+            {
+                "id":"http://localhost:8081/tomasz/search.php",
+                "label":"Search"
+            },
+            {
+                "id":"http://localhost:8081/tomasz/logout.php",
+                "label":"LOG OUT"
+            }
+        ]
+    }
+}
