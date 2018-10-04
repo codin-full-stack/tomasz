@@ -4,7 +4,7 @@
         "items":[
             {
                 "id":"http://localhost:8081/tomasz/",
-                "label":"Stories"
+                "label":"Feed"
             },
             {
                 "id":"http://localhost:8081/tomasz/login.php",
@@ -12,7 +12,7 @@
             },
             {
                 "id":"http://localhost:8081/tomasz/paieska.php",
-                "label":"Search User"
+                "label":"User search"
             },
             {
                 "id":"http://localhost:8081/tomasz/allRegisteredList.php",
@@ -21,7 +21,7 @@
             null,
             {
                 "id":"http://localhost:8081/tomasz/registration.php",
-                "label":"REGISTRACIJA"
+                "label":"Register"
             },
             {
                 "id":"http://localhost:8081/tomasz/userInfo.php",
@@ -34,7 +34,7 @@
             },
             {
                 "id":"http://localhost:8081/tomasz/post_new.php",
-                "label":"Post new story"
+                "label":"Post new feed"
             },
             {
                 "id":"http://localhost:8081/tomasz/myPosts.php",
@@ -42,7 +42,7 @@
             },
             {
                 "id":"http://localhost:8081/tomasz/search.php",
-                "label":"Search"
+                "label":"Search feed"
             },
             {
                 "id":"http://localhost:8081/tomasz/logout.php",

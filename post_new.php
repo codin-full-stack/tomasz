@@ -6,36 +6,25 @@ include 'sessionCheck.php';
 ?>
 
 
-
 <div class="textPad">
-    <form action="" method="POST">
+    <form action="" method="POST" enctype="multipart/form-data">
         <input type="text" placeholder="title" name="title" required>
         <textarea name="content" id="content" rows="20" cols="54"></textarea>
         <!-- <input type="text" name="content" required> -->
+        <input type="file" name="myimage">
         <button type="submit">POST</button>
-</div>
-</form>
-
-<?php
-
-if (!empty($_POST)) {
-    $pID=$_SESSION['id'];
-    $date=date("Y-m-d");
-    $title=mysqli_real_escape_string($conn, $_POST['title']);
-    $content=mysqli_real_escape_string($conn, $_POST['content']);
-    $sql = "INSERT INTO blogs (user_id, title, content, date) VALUES('$pID', '$title', '$content', '$date')";
-
-    // var_dump($sql);
-
-    // exit;
-
-    if(mysqli_query($conn, $sql)){
-        echo "Ikelta.";
+   
+   
+<?php 
+if (!empty($_POST)){
+        include('uploadPost.php');
     } else {
-        echo "KLAIDA!! NEIKELTA $sql. " . mysqli_error($conn);
+        echo("Nieko neparasei.");
     }
-}
-
-mysqli_close($conn);
-
 ?>
+
+</form>
+</div>
+
+
+

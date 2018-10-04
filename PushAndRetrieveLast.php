@@ -11,11 +11,13 @@ $email=$_POST['email'];
 $age=$_POST['amz'];
 $city=$_POST['miest'];
 $gender=$_POST['lyt'];
+$imagename=$_FILES["myimage"]["name"]; 
 
 if (!empty($_POST)) {
     unset($_POST['passconf']);
-    $sql = "INSERT INTO users (name, surename, email, age, city, password, gender)
-    VALUES('$name', '$surename', '$email', '$age', '$city', '$password', '$gender')";     
+    $imagetmp=addslashes (file_get_contents($_FILES['myimage']['tmp_name']));
+    $sql = "INSERT INTO users (name, surename, email, age, city, password, gender, image, image_text)
+    VALUES('$name', '$surename', '$email', '$age', '$city', '$password', '$gender', '$imagetmp', '$imagename')";     
     if(mysqli_query($conn, $sql)){
         echo "Ikelta.";
     } else {

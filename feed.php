@@ -6,7 +6,7 @@ include 'sessionCheck.php';
 
 
 <?php
-$sql = "SELECT post_id, user_id, title, date, timestamp, content FROM blogs ORDER BY timestamp DESC";
+$sql = "SELECT post_id, user_id, title, date, timestamp, image, image_text, content FROM blogs ORDER BY timestamp DESC";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
@@ -39,18 +39,18 @@ if (mysqli_num_rows($result) > 0) {
         </div>
         <div class="feed-box-title"> 
             <h2 class="feed-box-heading">
-                Lasddlkasjkdlkasjdlkasjd
+                Lorem ip amet consectetur adipisicing elit. Consequuntur est sequi cupiditate necessitatibus aliquam, dolores corporis laudantium perfe
             </h2>
         </div>
     </div>    
 
      <div class="feed-box">
         <div class="feed-box-image-container">
-            <img src="media/vyras.jpg" alt="" class="feed-box-image"/>
+            <img src="media/333.jpg" alt="" class="feed-box-image"/>
         </div>
         <div class="feed-box-title"> 
             <h2 class="feed-box-heading">
-                Lasddlkasjkdlkasjdlkasjd
+            Ipsum non incidunt animi perspiciatis. 
             </h2>
         </div>
     </div>    
@@ -61,7 +61,7 @@ if (mysqli_num_rows($result) > 0) {
         </div>
         <div class="feed-box-title"> 
             <h2 class="feed-box-heading">
-                Lasddlkasjkdlkasjdlkasjd
+            Dolores, error ad veniam esse eos possimus corrupti ex sapiente perferendis reiciendis non temporibus dicta, voluptatem quas!
             </h2>
         </div>
     </div>    
@@ -72,18 +72,18 @@ if (mysqli_num_rows($result) > 0) {
         </div>
         <div class="feed-box-title"> 
             <h2 class="feed-box-heading">
-                Lasddlkasjkdlkasjdlkasjd
+                Lasddlkasjkdlkasjdlka#################dfghdhebyethvertdfsgdfhgpudhesjd
             </h2>
         </div>
     </div>    
 
      <div class="feed-box">
         <div class="feed-box-image-container">
-            <img src="media/vyraz.gif" alt="" class="feed-box-image"/>
+            <img src="media/images.jpg" alt="" class="feed-box-image"/>
         </div>
         <div class="feed-box-title"> 
             <h2 class="feed-box-heading">
-                Lasddlkasjkdlkasjdlkasjd
+            Dolores, error ad veniam esse eos possimus corrupti ex sapiente perferendis reiciendis non temporibus dicta, voluptatem quas!
             </h2>
         </div>
     </div>    
@@ -94,7 +94,7 @@ if (mysqli_num_rows($result) > 0) {
         </div>
         <div class="feed-box-title"> 
             <h2 class="feed-box-heading">
-                Lasddlkasjkdlkasjdlkasjd
+                WRX WRX WRX WRX WRX WRX WRX WRX WRX WRX WRX WRX WRX WRX
             </h2>
         </div>
     </div>    

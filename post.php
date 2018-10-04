@@ -11,6 +11,7 @@ if (isset($_GET['ID'])) {
     $sql = "SELECT * FROM blogs where post_id='$ID' ";
     $result = mysqli_query($conn, $sql);
     $row = mysqli_fetch_assoc($result);
+    echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['image'] ).'"" width="300" height="300"/>' . "<br>";
     echo "<h2>".$row['title'] . "</h2><br><br>";
     echo $row['content'];
     } else {
