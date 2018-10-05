@@ -155,6 +155,7 @@ body {
     background-color: #ffffff;
     color: #4AA270;
     text-align: center;
+
 }
 .allreg {
     color: #4AA270;
@@ -183,7 +184,7 @@ body {
 
 .feed {
     display: flex; /* or inline-flex */
-    width: 1200px;
+    width: 61%;
     background-color: #F8F8F8;
     margin-top: 40px;
     margin-right: auto;
@@ -236,3 +237,57 @@ body {
 /* @media only screen (grafikos dydis) {
 
 } */
+
+.mygtukasPaieska {
+    text-align: right;
+    background: white;
+    margin: auto;
+}
+
+.searchbutton {
+    background-color: #4AA270;
+    color: white;
+    padding: 6px 14px;
+    border: none;
+    width: 30%;
+    position: absolute;
+    top: 45px;
+    right: 20px;
+
+}
+
+.paieska {
+    display: block;
+    width: 21%;
+    background-color: #ffffff;
+    min-height: 140px;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+    position: relative;
+    top: 100px;
+    padding: 10px;
+}
+.allUsers {
+    display: block;
+    width: 20%;
+    background-color: #F8F8F8;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+.userInfo {
+    display: block;
+    width: 20%;
+    background-color: #F8F8F8;
+    margin-top: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+

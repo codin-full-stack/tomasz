@@ -6,24 +6,23 @@ include 'sessionCheck.php';
 
 <div class="paieska">
     <form action="" method="POST">
-        <label for="email"><b>Paieska pagal E-mail</b></label>
-        <input type="text" placeholder="E-mail" name="email" required>
-        <br><br>
+        <input type="text" placeholder="E-mail" name="email" class="field" required>
         <div class="mygtukasPaieska">
-            <button type="submit">Paieska</button>
+            <button class="searchbutton" type="submit">Paieska</button>
         </div>
     </form>
 <?php 
 
 
 if(!isset($_POST['email'])){
-  echo "<br>Iveskite vartotojo email";
+    //
   }else{
     $search_value=$_POST["email"];
     $sql="select * from users where email like '%$search_value%'";
     $res=$conn->query($sql);
       while($row=$res->fetch_assoc()){
-        echo "<b>ID - </b>" . $row["id"]. "<br>" . 
+        echo "<br><br><br>" . '<img src="data:image/jpeg;base64,'.base64_encode( $row['image'] ).'"" width="300" height="300"/>';  
+        echo "<br><b>ID - </b>" . $row["id"]. "<br>" . 
         "Vardas: " . $row["name"]. "<br>" . 
         "Pavarde: " . $row["surename"]. "<br>" . 
         "Email: " . $row["email"]. "<br>" . 
@@ -36,9 +35,5 @@ if(!isset($_POST['email'])){
 
 ?>
 
-<br><br><br>
-<div class="linkBack">
-<a href="index.php" class="button">Grizti i registracijos forma</a>
-</div>
-
 <?php include('footer.php'); ?>
+</div>
