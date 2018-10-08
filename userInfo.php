@@ -13,7 +13,7 @@ if (isset($_SESSION['id'])) {
     $sql="select * from users where id like '%$search_value%'";
     $res=$conn->query($sql);
       while($row=$res->fetch_assoc()){
-        echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['image'] ).'"" width="300" height="300"/>' . "<br>";
+        echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['image'] ).'"" width="250" height="300"/>' . "<br>";
         echo "<b>ID - </b>" . $row["id"]. "<br>" . 
         "Vardas: " . $row["name"]. "<br>" . 
         "Pavarde: " . $row["surename"]. "<br>" . 

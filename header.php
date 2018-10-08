@@ -24,7 +24,6 @@ include('jsonFunctions.php');
     <link rel="stylesheet" href="styles/styles.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
-<body background="media/bgwp.jpg">
     <div class="navigation">  
         <?php include('TopMenu.php')?>    
     </div>

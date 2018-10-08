@@ -6,7 +6,8 @@ include 'header.php';
 
 <html>
 <body>
-    <div class="container">
+    <div class="boxLogin">
+        <div class ="containerlogin">
         <form action="" method="POST">
         <div class="buttons">
             <button type="button" onclick="window.location.href='http://localhost:8081/tomasz/login.php'" class="rButton" required><b>Login</b></button>
@@ -32,7 +33,8 @@ include 'header.php';
                 </button>
             </div>
         </div>
-    </div> 
+    </div>
+</div> 
     </form>        
 </body> 
 </html>

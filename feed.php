@@ -13,19 +13,18 @@ $result = mysqli_query($conn, $sql);
             <div class="feed-box">
                 <div class="feed-box-image-container">
                     <?php if (!empty($post['image'])){ ?>
-                        <img src="data:image/jpeg;base64,<?php echo base64_encode($post['image']); ?>" class="feed-box-image" />
+                        <a href="post.php?ID=<?php echo $post['post_id']; ?>"><img src="data:image/jpeg;base64,<?php echo base64_encode($post['image']); ?>" class="feed-box-image" /></a>
                     <?php } ?>
                 </div>
                 <div class="feed-box-title"> 
                     <h2 class="feed-box-heading">
                         <?php
-                            $str = substr($post['title'], 0, 120);
+                            $str = substr($post['title'], 0, 60);
                         ?>
-
-                        <?php echo $str; ?>
-
-                        <a href="post.php?ID=<?php echo $post['post_id']; ?>">Read more</a>
-
+                           <a href="post.php?ID=<?php echo $post['post_id']; ?>"><?php echo $str; ?></a>
+                    </h2>
+                </div>
+                    
                         <?php
                                 // echo $row['title'];
                                 // echo $str . "<a href='post.php?ID={$post['post_id']}'>Read more</a>";   
@@ -40,8 +39,6 @@ $result = mysqli_query($conn, $sql);
                                 // echo "Posted by: " . $roww['name'];
                                 // echo "<i>Posted</i>: " . $row['date'];
                         ?>
-                    </h2>
-                </div>
             </div>
         <?php } ?>
     <?php } else { ?>
