@@ -3,6 +3,8 @@ body {
     align-items: center;
     height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
 
 }
 .container {
@@ -216,9 +218,6 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
-/* @media only screen (grafikos dydis) {
-
-} */
 
 .mygtukasPaieska {
     text-align: right;
@@ -249,27 +248,6 @@ body {
     flex-wrap: wrap;
     position: relative;
     top: 100px;
-    padding: 10px;
-}
-.allUsers {
-    display: block;
-    width: 20%;
-    background-color: #F8F8F8;
-    margin-top: 40px;
-    margin-right: auto;
-    margin-left: auto;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px;
-}
-.userInfo {
-    display: block;
-    width: 20%;
-    background-color: #F8F8F8;
-    margin-top: 250px;
-    margin-right: auto;
-    margin-left: auto;
-    flex-wrap: wrap;
     padding: 10px;
 }
 
@@ -330,71 +308,8 @@ body {
     width: 320px;
     box-sizing: border-box;
 }
-@media only screen and (max-width: 1024px) {
-    .feed {
-      position: relative;
-      bottom: 0px;
-    } 
-} 
-@media only screen and (max-width: 768px) {
-  .feed {
-    position: relative;
-    bottom: -20px;
-  } 
-} 
 
-@media only screen and (max-width: 425px) {
-    .feed {
-      position: relative;
-      bottom: -45px;
-    } 
-}
-@media only screen and (max-width: 375px) {
-    .feed {
-      position: relative;
-      bottom: -45px;
-    } 
-}   
-@media only screen and (max-width: 320px) {
-    .feed {
-      position: relative;
-      bottom: -70px;
-    } 
-}  
-
-.allUsers a {
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    color: #494949;
-    overflow-wrap: break-word;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    padding: 8px;
-    background-color: #494949;
-    color: #ffffff;
-    text-decoration: none;
-}
-li a:hover:not(.active) {
-    background-color:#7e7e7e;
-    color: white;
-}
-li a.active {
-    background-color: #4CAF50;
-    color: white;
-}
-.navigation {
+.nav {
     position: fixed;
     width: 100%;
     background-color: #494949;
@@ -402,12 +317,218 @@ li a.active {
     top: 0px;
     z-index: 100;
     left: 0px;
+} 
+ 
+.nav ul {
+    list-style: none;
+    background-color: #444;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .nav li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid #888;
+    width: 100%;
+  }
+   
+  .nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: .3s background-color;
+  }
+   
+  .nav a:hover {
+    background-color: #025e10;
+  }
+   
+  .nav a.active {
+    background-color: #fff;
+    color: #444;
+    cursor: default;
+  }
+  .users {
+    display: flex;
+    width: 80%;
+    background-color: #F8F8F8;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
 }
-.log {
-    float: right;
+.userinfo {
+    display: flex;
+    width: 20%;
+    background-color: #F8F8F8;
+    margin-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+  
+  @media screen and (min-width: 435px) {
+    .nav li {
+      width: 120px;
+      border-bottom: none;
+      height: 50px;
+      line-height: 50px;
+      font-size: 1.4em;
+      display: inline-block;
+      margin-right: -4px;
+    }
+}
+   
+@media only screen and (max-width: 1440px) {
+    .feed-box:nth-child(4n+4) {
+        width: 560px;
+    }
+    .feed {
+        margin-top: 45px;    
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .feed-box:nth-child(1n) {
+        width: 48%;
+    }
+    .feed {
+        width: 75%;
+        margin-top: 93px;     
+    }
+    .users-box:nth-child(1n) {
+        width: 32%;
+    }
+    .users {
+        margin-top: 93px; 
+    }
+    .userinfo {
+        width: 30%;
+    }
+
+}    
+@media only screen and (max-width: 768px) {
+    .feed-box:nth-child(1n) {
+        width: 100%;
+    }
+    .users-box:nth-child(1n) {
+        width: 48%;
+    }
+    .users {
+        margin-top: 93px; 
+    }
+    .userinfo {
+        width: 40%;
+    }
+}    
+@media only screen and (max-width: 425px) {
+    .feed-box:nth-child(1n) {
+        width: 100%;
+    }
+    .feed {
+        width: 90%;
+        margin-top: 393px; 
+    }
+    .users {
+        width: 90%;
+        margin-top: 393px; 
+    }
+    .userinfo {
+        width: 60%;
+        margin-top: 393px; 
+    }
+}    
+@media only screen and (max-width: 320px) {
+    .feed-box:nth-child(1n) {
+        width: 100%;
+    }
+    .feed {
+        width: 95%;   
+    }
+    .users {
+        width: 95%;   
+    }
+    .userinfo {
+        width: 90%;
+    }
+}    
+.allUsers a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #494949;
+    overflow-wrap: break-word;
+}
+
+.users-box {
+    height: 425px;
+    width: 270px;
+    background-color:#ffffff;
     position: relative;
-    right: 20px;
+    overflow: hidden;
+    margin: 5px;
 }
-.log a {
-    color: #ff8000;
+ 
+.users-box-image {
+    height: auto;
+    width: 100%;
+
+}
+
+.users-box-info {
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    background-color: #ffffff;
+    width: 100%;
+}
+.users-box-image-container {
+    overflow: hidden;
+    height: 290px;
+    width: auto;
+
+}
+.users-box-heading {
+    overflow-wrap: break-word;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+
+.userinfo-box {
+    height: 425px;
+    width: 100%;
+    background-color:#ffffff;
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+}
+ 
+.userinfo-box-image {
+    height: auto;
+    width: 100%;
+
+}
+
+.userinfo-box-info {
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    background-color: #ffffff;
+    width: 100%;
+}
+.userinfo-box-image-container {
+    overflow: hidden;
+    height: 290px;
+    width: auto;
+
+}
+.userinfo-box-heading {
+    overflow-wrap: break-word;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
 }
