@@ -12,6 +12,7 @@ $result = mysqli_query($conn, $sql);
     <?php if (mysqli_num_rows($result) > 0) { ?>
         <?php while ($row = mysqli_fetch_assoc($result)) { ?>
             <div class="users-box">
+             
                 <div class="users-box-image-container">
                     <?php if (!empty($row['image'])){ ?>
                         <img src="data:image/jpeg;base64,<?php echo base64_encode($row['image']); ?>" class="users-box-image" /></a>
@@ -27,8 +28,8 @@ $result = mysqli_query($conn, $sql);
                                 "Amzius: " . $row["age"]. "<br>" . 
                                 "Miestas: " . $row["city"]. "<br>" . 
                                 "Lytis: " . $row["gender"]. "<br><br>";
-                        ?>               
-                    </h2>
+                        ?>          
+                    </h2>  
                 </div>
             </div>
         <?php } ?>

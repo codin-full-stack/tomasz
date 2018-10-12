@@ -3,6 +3,7 @@ session_start();
 // include('sessionCheck.php');
 include('jsonFunctions.php');
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>

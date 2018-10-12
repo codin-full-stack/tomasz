@@ -1,4 +1,3 @@
-
 <ul>
     <li><a href="index.php">Home</a></li>
     <li class="log"><a href="login.php">Login</a></li>
@@ -10,6 +9,7 @@
     <li><a href="myPosts.php">My posts</a></li>
     <li><a href="search.php">Post search</a></li>
     <li class="log"><a href="logout.php">Logout</a></li>
+    <li class="kaledos"><a></a></li>
 </ul>
 
 
