@@ -10,6 +10,8 @@
     <li><a href="search.php">Post search</a></li>
     <li class="log"><a href="logout.php">Logout</a></li>
     <li class="kaledos"><a></a></li>
+    <li class="clock"><a></a></li>
+    <li class="colorz"><input type="text" name="colors" value=""></li>
 </ul>
 
 
