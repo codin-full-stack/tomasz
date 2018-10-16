@@ -9,9 +9,15 @@
     <li><a href="myPosts.php">My posts</a></li>
     <li><a href="search.php">Post search</a></li>
     <li class="log"><a href="logout.php">Logout</a></li>
-    <li class="kaledos"><a></a></li>
-    <li class="clock"><a></a></li>
-    <li class="colorz"><input type="text" name="colors" value=""></li>
+    <li><input type="text" name="bodycolor" value="" placeholder="body color"></li>
+    <li><input type="text" name="navcolor" value="" placeholder="nav color"></li>    
+    <!-- <div class='dropdown' id='theme-dropdown'>  
+        <div class='dropdown-button'>Themes</div>
+            <ul class='dropdown-selection'>  
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul> -->
+        <!-- </div> -->
+    <!-- </div>   -->
 </ul>
-
-
