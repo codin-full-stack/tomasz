@@ -107,3 +107,11 @@ function changecolor2(){
   document.querySelector("ul").style.background = this.value;
 }
 
+function showmenu() {
+  var x = document.querySelector("ul");
+  if (x.style.display === "none") {
+      x.style.display = "block";
+  } else {
+      x.style.display = "none";
+  }
+}

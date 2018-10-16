@@ -374,7 +374,7 @@ body {
     padding: 10px;
 }
   
-  @media screen and (min-width: 435px) {
+  @media screen and (min-width: 769px) {
     .nav li {
       width: 120px;
       border-bottom: none;
@@ -412,7 +412,19 @@ body {
         width: 30%;
     }
 
-}    
+}
+@media only screen and (min-width: 1023px) {
+    .navh {
+        display: none;
+    } 
+ }
+ @media only screen and (max-width: 1023px) {
+        .nav ul {
+        display: none;
+    }
+}
+
+
 @media only screen and (max-width: 768px) {
     .feed-box:nth-child(1n) {
         width: 100%;
@@ -602,12 +614,7 @@ td a {
     table {
         width: 90%;
     }
-	.nav {
-        display: none;
-    }
-    .navh {
-        display: block;
-    }
+
 	/* Hide table headers (but not display: none;, for accessibility) */
 	thead tr { 
 		position: absolute;

@@ -10,8 +10,8 @@ include 'header.php';
         <div class ="containerlogin">
         <form action="" method="POST">
         <div class="buttons">
-            <button type="button" onclick="window.location.href='http://localhost:8081/tomasz/login.php'" class="rButton" required><b>Login</b></button>
-            <button type="button" onclick="window.location.href='http://localhost:8081/tomasz/registration.php'" class="lButton"required>Register</button>
+            <button type="button" onclick="window.location.href='login.php'" class="rButton" required><b>Login</b></button>
+            <button type="button" onclick="window.location.href='registration.php'" class="lButton"required>Register</button>
         </div>
         <div class="box">
             <div class="box-item">

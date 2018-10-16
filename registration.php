@@ -14,8 +14,8 @@ include('header.php')?>
     <div class="container">
         <form action="" method="POST" enctype="multipart/form-data">
         <div class="buttons">
-            <button type="button" onclick="window.location.href='http://localhost:8081/tomasz/login.php'" class="lButton" required>Login</button>
-            <button type="button" onclick="window.location.href='http://localhost:8081/tomasz/registration.php'" class="rButton"required>Register</button>
+            <button type="button" onclick="window.location.href='login.php'" class="lButton" required>Login</button>
+            <button type="button" onclick="window.location.href='registration.php'" class="rButton"required>Register</button>
         </div>
         <div class="boxReg">
             <div class="box-item">
