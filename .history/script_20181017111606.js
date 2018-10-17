@@ -109,13 +109,12 @@ function changecolor2(){
 
 var hamburgerEl = document.querySelector('.navh');
 
-hamburgerEl.addEventListener('click', function () {
-  var menuEl = document.querySelector(".nav ul");
-  
-  if(menuEl.classList.contains('active')) {
-    menuEl.classList.remove('active');
+hamburgerEl.addEventListener
+function showmenu() {
+  var x = document.querySelector(".nav ul");
+  if (x.style.display === "none") {
+      x.style.display = "block";
   } else {
-    menuEl.classList.add('active');
+      x.style.display = "none";
   }
-
-});
+}

@@ -109,13 +109,5 @@ function changecolor2(){
 
 var hamburgerEl = document.querySelector('.navh');
 
-hamburgerEl.addEventListener('click', function () {
-  var menuEl = document.querySelector(".nav ul");
-  
-  if(menuEl.classList.contains('active')) {
-    menuEl.classList.remove('active');
-  } else {
-    menuEl.classList.add('active');
-  }
+hamburgerEl.addEventListener('click', )
 
-});

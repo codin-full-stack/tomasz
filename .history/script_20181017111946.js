@@ -110,6 +110,7 @@ function changecolor2(){
 var hamburgerEl = document.querySelector('.navh');
 
 hamburgerEl.addEventListener('click', function () {
+  console.log('a');
   var menuEl = document.querySelector(".nav ul");
   
   if(menuEl.classList.contains('active')) {

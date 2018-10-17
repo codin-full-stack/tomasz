@@ -28,9 +28,7 @@ include('jsonFunctions.php');
 <header>
 
     <div class="nav">
-        <div class="navh" onclick="showmenu()"></div>
-        <div class="navh" onclick="showmenu()"></div>
-        <div class="navh" onclick="showmenu()"></div>  
-            <?php include('TopMenu.php')?>    
+        <div class="navh"></div> 
+        <?php include('TopMenu.php')?>    
     </div>
 </header>
