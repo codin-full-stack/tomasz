@@ -26,11 +26,8 @@ include('jsonFunctions.php');
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <header>
-
     <div class="nav">
-        <div class="navh" onclick="showmenu()"></div>
-        <div class="navh" onclick="showmenu()"></div>
-        <div class="navh" onclick="showmenu()"></div>  
-            <?php include('TopMenu.php')?>    
+        <div class="navh"></div> 
+        <?php include('TopMenu.php')?>    
     </div>
 </header>

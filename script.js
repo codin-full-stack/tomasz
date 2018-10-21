@@ -66,7 +66,7 @@ var change = document.querySelectorAll('.feed-box-heading');
 var i = 0;
 var len = change.length;
 for (; i < len; i++ ) {
-  change[i].style.backgroundColor = "red";
+  change[i].style.backgroundColor = "white";
 }
 
 
@@ -74,7 +74,7 @@ var change2 = document.querySelectorAll('.tableinfo tbody tr:nth-child(2n)');
 var i2 = 0;
 var len2 = change2.length;
 for (; i2 < len2; i2++) {
-  change2[i2].style.backgroundColor= "red";
+  change2[i2].style.backgroundColor= "white";
 }
 
 
@@ -107,11 +107,70 @@ function changecolor2(){
   document.querySelector("ul").style.background = this.value;
 }
 
-function showmenu() {
-  var x = document.querySelector("ul");
-  if (x.style.display === "none") {
-      x.style.display = "block";
+var hamburgerEl = document.querySelector('.navh');
+
+hamburgerEl.addEventListener('click', function () {
+  var menuEl = document.querySelector(".nav ul");
+  
+  if(menuEl.classList.contains('active')) {
+    menuEl.classList.remove('active');
+    document.querySelector('.navh').style.borderTop = "30px solid #2cc030";
   } else {
-      x.style.display = "none";
+    menuEl.classList.add('active');
+    document.querySelector('.navh').style.borderTop = "38px solid #ff0000";
   }
+
+});
+//skaiciuotuvo funkcija
+
+var rez = document.querySelector(".calc-input-box");
+var vals = [];
+
+function result(button) {
+   var val = button.getAttribute('data-value');
+
+   if(button.classList.contains('symb') && val != '=' && val != '%') {
+       vals.push(val);
+   }
+   if (rez.value=='0'){
+       rez.value='';
+   }
+
+   if (val=='='){
+       if (rez.value.indexOf('%') > -1) {
+           var symbol = vals[0];
+           var numbers = rez.value.split(symbol);
+           var percents = (numbers[0] / 100) * parseInt(numbers[1]);
+           var result = numbers[0] + symbol + percents;
+
+           rez.value=eval(result).toFixed(0);
+           val='';
+           vals = [];
+
+       } else {
+           rez.value=eval(rez.value).toFixed(2);
+           var n = rez.value;
+           n = parseFloat(n);
+           rez.value=n;
+           val='';
+           vals = [];
+       }
+   }
+   if (val=='A/C'){
+       rez.value='0';
+       val='';
+       vals = [];
+   }
+   rez.value += val;
+
 }
+
+var btn = document.querySelectorAll('button.calc-number1, button.calc-number2, button.calc-number3');
+
+for (var xi = 0; xi < btn.length; xi++) {
+   btn[xi].addEventListener("click", function(e) {
+       result(e.currentTarget);
+   });
+
+}
+
