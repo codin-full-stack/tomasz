@@ -1,0 +1,49 @@
+body {
+    /* width: 100vw;
+    height: 100vh; */
+}
+
+.first {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-image: url("images/bg-masthead.jpg");
+    background-position: left; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.second {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    background-color: #ffffff;
+
+}
+
+.textbox {
+    height: 180px;
+    width: 650px;
+    align-self: center;
+}
+.textbox2 {
+    height: 70px;
+    width: 840px;
+    align-self: center;
+}
+
+.first h1 {
+    font-size: 85px;
+}
+
+.first h2 {
+    font-size: 30px;
+}
+
+.second h1 {
+    font-size: 26px;
+    font-weight: 750;
+}
+.container-fluid {
+    display: flex;
+}
