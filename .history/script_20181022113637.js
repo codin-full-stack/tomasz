@@ -168,10 +168,9 @@ function result(button) {
 var btn = document.querySelectorAll('button.calc-number1, button.calc-number2, button.calc-number3');
 
 for (var xi = 0; xi < btn.length; xi++) {
-   btn[xi].addEventListener("click", function(e) {
+   btn[xi].addEventListener("change", function(e) {
        result(e.currentTarget);
    });
 
 }
 
-// portfolio

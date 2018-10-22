@@ -1,0 +1,19 @@
+body {
+    /* width: 100vw;
+    height: 100vh; */
+}
+
+.first {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-image: url("images/bg-masthead.jpg");
+    background-position: left; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textbox {
+    height: 650px;
+    width 650px;
+}
