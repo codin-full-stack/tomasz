@@ -23,6 +23,18 @@ body {
     height: 550px;
 }
 
+.fourth {
+    height: 100vh;
+    background-image: url("images/bg-callout.jpg");
+    background-position: left; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fifth {
+    /* height: 100vh; */
+  
+}
+
 .textbox {
     width: 650px;
     align-self: center;
@@ -39,6 +51,18 @@ body {
 
 .textbox3 {
     padding-top: 100px;
+    align-self: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.textbox4 {
+    padding-top: 350px;
+    align-self: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.textbox5 {
+    padding-top: 50px;
     align-self: center;
     text-align: center;
     margin: 0 auto;
@@ -71,6 +95,36 @@ body {
     font-weight: bold;
     color: #ffffff;
 }
+.fourth h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.maintext4 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.secondtext4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #bcd4d1;
+}
+
+.fifth h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #b6b307;
+}
+
+.fifth h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #000000;
+}
+
 .container-fluid {
 
 }

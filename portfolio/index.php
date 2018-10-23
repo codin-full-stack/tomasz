@@ -42,28 +42,74 @@
           <div class="row">
               <div class="col-md-3">
                 <div class="iconframe"></div>
-                
+                <p class="maintext4">Responsive</p>
+                <p class="secondtext4">Looks great on any screen size!</p>
               </div> 
               <div class="col-md-3">
               <div class="iconframe"></div>
+                <p class="maintext4">Redesigned</p>
+                <p class="secondtext4">Freshly design for Boostrap 4.</p>
               </div>
               <div class="col-md-3">
                 <div class="iconframe"></div>
+                  <p class="maintext4">Favorited</p>
+                  <p class="secondtext4">Million of users (icon) Boostrap!</p>
               
               </div>
               <div class="col-md-3">
                 <div class="iconframe"></div>
-             
+                  <p class="maintext4">Question</p>
+                  <p class="secondtext4">I mustache you a question..</p>
               </div>
             </div>
-      
+        </div>
       </div>
-      </div>
-
-
     </section>
 
+        <section class="fourth">
+      <div class="container-fluid flex">
+        <div class="textbox4">
+        <h1 class="maintext5">Welcome to your next Website!</h1>
+        <button class="button">Download now</button>
+        </div>
+      </div>  
+    </section>
 
+<section class="fifth">
+      <div class="container flex">
+        <div class="textbox5">
+        <h2 class="secondtext5">PORTFOLIO</h2>
+        <h1 class="maintext5">Recent projects</h1>
+          <div class="row">
+              <div class="col-md-6">
+                <img src="images/portfolio-1.jpg" alt="">
+                <p class="maintext4">Responsive</p>
+                <p class="secondtext4">Looks great on any screen size!</p>
+              </div> 
+              <div class="col-md-6">
+              <img src="images/portfolio-2.jpg" alt="">
+                <p class="maintext4">Redesigned</p>
+                <p class="secondtext4">Freshly design for Boostrap 4.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+              <img src="images/portfolio-3.jpg" alt="">
+
+
+                  <p class="maintext4">Favorited</p>
+                  <p class="secondtext4">Million of users (icon) Boostrap!</p>
+              
+              </div>
+              <div class="col-md-6">
+                <img src="images/portfolio-4.jpg" alt="">
+                  <p class="maintext4">Question</p>
+                  <p class="secondtext4">I mustache you a question..</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
 
 
 
