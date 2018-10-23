@@ -8,14 +8,14 @@ $result = mysqli_query($conn, $sql);
 $data = mysqli_fetch_assoc($result);
 $uID=$data['id']
 ?>
-
+<br><br>
 <div class="comment">
     <form method="POST">
     <input type="text" name="kname" value="<?php echo (! empty($data['name']) ? $data['name'] : ''); ?>">
     <textarea rows="4" cols="40" name="comment" id="comment" placeholder="Komentaras" required></textarea>
     <button type="submit">Komentuoti</button>
 </div>
-
+<br><br><br>
 
 
 <?php

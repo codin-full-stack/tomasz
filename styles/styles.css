@@ -177,6 +177,30 @@ body {
     justify-content: space-around;
     padding: 10px;
 }
+
+.postin {
+    display: block; /* or inline-flex */
+    width: 61%;
+    background-color: #F8F8F8;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.myposts {
+    display: block; /* or inline-flex */
+    width: 61%;
+    background-color: #F8F8F8;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
  
 .feed-box {
     height: 425px;
@@ -209,6 +233,25 @@ body {
 
 }
 
+.comment {
+    display: table-caption;
+    left: 415px;
+    position: absolute;
+}
+
+.commentsBox {
+    display: block; /* or inline-flex */
+    width: 40%;
+    background-color: #F8F8F8;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    text-align: center;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -239,7 +282,7 @@ body {
 
 .paieska {
     display: block;
-    width: 300px;
+    width: 25%;
     background-color: #ffffff;
     min-height: 140px;
     margin-top: 40px;
@@ -840,4 +883,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 .calc-buttons-min {
     background-color: #29ca41;
+}
+
+.photosize {
+    width: 60%;
+    height: 60%;
 }

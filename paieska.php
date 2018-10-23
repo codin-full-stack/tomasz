@@ -14,13 +14,14 @@ include 'sessionCheck.php';
 <?php 
 
 
-if(!isset($_POST['email'])){
-    //
-  }else{
+if(isset($_POST['email'])){
     $search_value=$_POST["email"];
-    $sql="select * from users where email like '%$search_value%'";
+    $sql="select * from users where email like '$search_value'";
     $res=$conn->query($sql);
       while($row=$res->fetch_assoc()){
+          if(empty($sql) ) {
+              echo "Toks vartotojas neegzistuoja";
+            } else {
         echo "<br><br><br>" . '<img src="data:image/jpeg;base64,'.base64_encode( $row['image'] ).'"" width="300" height="300"/>';  
         echo "<br><b>ID - </b>" . $row["id"]. "<br>" . 
         "Vardas: " . $row["name"]. "<br>" . 
@@ -30,8 +31,10 @@ if(!isset($_POST['email'])){
         "Miestas: " . $row["city"]. "<br>" . 
         "Slaptazodis: " . $row["password"]. "<br>" . 
         "Lytis: " . $row["gender"]. "<br>";
-      }       
-  }
+
+        }
+    } 
+}
 
 ?>
 

@@ -19,7 +19,7 @@ if (isset($_GET['ID'])) {
 <div class="textPad">
     <form action="" method="POST">
         <input type="text" name="title" value="<?php echo (! empty($row['title']) ? $row['title'] : ''); ?>">
-        <textarea name="content" id="content" rows="20" cols="54" value="" ><?php echo (! empty($row['content']) ? $row['content'] : ''); ?></textarea>
+        <textarea name="content" id="content" rows="20" cols="43" value="" ><?php echo (! empty($row['content']) ? $row['content'] : ''); ?></textarea>
         <div class="mygtukas">
             <button type="submit">ATNAUJINTI</button>
         </div>

@@ -19,7 +19,7 @@ if (isset($_GET['ID'])) {
 
 <div class="textPad">
     <form action="" method="POST">
-        <textarea name="comment" id="comment" rows="20" cols="54" value="" ><?php echo (! empty($row['comment']) ? $row['comment'] : ''); ?></textarea>
+        <textarea name="comment" id="comment" rows="20" cols="43" value="" ><?php echo (! empty($row['comment']) ? $row['comment'] : ''); ?></textarea>
         <div class="mygtukas">
             <button type="submit">ATNAUJINTI</button>
         </div>

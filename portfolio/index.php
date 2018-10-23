@@ -16,7 +16,16 @@
 <body>
     <section class="first">
       <div class="container-fluid flex">
-        <buton><i class="fas fa-bars"></i></button>
+        <div id="openmenu" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+        <div class="nav">
+            <ul id="navh">
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Portfolio</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+        </div>
         <div class="textbox">
         <h1 class="maintext">Stylish portfolio</h1>
         <h2 class="secondtext"><i>A free Bootstrap Theme by Start Bootstrap</i></h2>

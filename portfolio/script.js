@@ -20,3 +20,17 @@
       title: 'Hello World!'
     });
   }
+
+
+  function toggleMenu() {
+    var menuBox = document.getElementById('navh');
+    var box = document.querySelector('.nav');    
+    if(menuBox.style.display == "block") { 
+      menuBox.style.display = "none";
+      box.style.display = "none";
+    }
+    else { 
+      menuBox.style.display = "block";
+      box.style.display = "block";
+    }
+  }
