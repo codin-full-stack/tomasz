@@ -15,6 +15,7 @@ if (isset($_GET['ID'])) {
     echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['image'] ).'"" width="100%" height="70%"/>';
     
     echo "<br><br>" .$row['content'];
+    echo "<br><br><br>Posted on: " .$row['date'];
     } else {
         header('Location: index.php');
     }

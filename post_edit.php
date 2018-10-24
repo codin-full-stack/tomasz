@@ -36,6 +36,7 @@ if (!empty($_POST)) {
     $uresult= mysqli_query($conn, $usql);
     if($uresult) {
             echo "Atnaujinta";
+            header('Location: myposts.php');
     } else {
             echo "KLAIDA!! NEIKELTA $usql. " . mysqli_error($conn);
     }   

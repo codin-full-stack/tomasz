@@ -1,21 +1,22 @@
 <?php
 include 'config.php';
-include 'header.php';
 include 'sessionCheck.php';
-?>
 
-<form action="" method="post">
-<input type="submit" name="delete" value="delete" onclick="return confirm('you SURE???');">
+if (isset($_GET['ID']) && isset($_GET['postId'])) {
+    $sqlExists = "SELECT `id` FROM `comments` WHERE `id`=" . $_GET['ID'];
+    $resultExists = mysqli_query($conn, $sqlExists);
 
-<?php
-if (isset($_POST['delete'])) {
-    if (isset($_GET['ID'])) {
-        $ID = mysqli_real_escape_string($conn, $_GET['ID']);
-        $sql = "DELETE FROM comments WHERE id=$ID";  
-        $result = mysqli_query($conn, $sql) or die("Bad Query: $sql");
-        echo "Post was deleted";
-        } else {
-            header('Location: index.php');
+    if(mysqli_num_rows($resultExists) > 0) {
+        $sql = "DELETE FROM comments WHERE id=" . $_GET['ID'];
+        
+        if(mysqli_query($conn, $sql)) {
+            header('Location: post.php?ID=' . $_GET['postId']);
+        }
+    } else {
+        echo 'Tokio `id` nera';
     }
-} 
-?>
+
+    
+} else {
+    header('Location: index.php');
+}

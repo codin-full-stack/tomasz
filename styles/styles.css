@@ -212,8 +212,12 @@ body {
 }
  
 .feed-box-image {
-    height: auto;
+    height: 100%;
     width: 100%;
+    background-size: contain;
+    object-fit: cover;
+
+
 
 }
 .feed-box:nth-child(4n-3) {
@@ -228,7 +232,7 @@ body {
 }
 .feed-box-image-container {
     overflow: hidden;
-    height: 290px;
+    height: 360px;
     width: auto;
 
 }
@@ -888,4 +892,9 @@ input[type=number]::-webkit-outer-spin-button {
 .photosize {
     width: 60%;
     height: 60%;
+}
+
+.delete {
+    position: absolute;
+    top: 50px;
 }

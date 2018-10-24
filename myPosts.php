@@ -7,7 +7,7 @@ include 'sessionCheck.php';
 <?php
 if (isset($_SESSION['id'])) {
     $ID=$_SESSION['id'];
-    $gsql = "SELECT * FROM blogs where user_id='$ID' ";
+    $gsql = "SELECT * FROM blogs where user_id='$ID' ORDER BY timestamp DESC ";
     $gresult = mysqli_query($conn, $gsql);
         while ( $grow = mysqli_fetch_assoc($gresult)) {
             echo "<h2>" . $grow["title"]."</h2>" . "<br><br>";
@@ -18,7 +18,7 @@ if (isset($_SESSION['id'])) {
             echo "<h3>" . $grow["content"]."<br><br><br>" . "</h3>";
             if($ID===$grow['user_id']) {
                 echo "<a href='post_edit.php?ID={$grow['post_id']}'>Edit</a>&nbsp&nbsp";
-                echo "<a href='post_delete.php?ID={$grow['post_id']}'>Delete</a>&nbsp&nbsp&nbsp";            
+                echo "<a href='post_delete.php?ID={$grow['post_id']}'onclick='return confirm(\"you SURE???\");'>Delete</a>&nbsp&nbsp&nbsp";            
                 }                
             $check=$grow["user_id"];
             $sql2="select * from users where id = '$check'";
