@@ -98,15 +98,17 @@ if (!empty($_POST)) {
     if ($_POST['pass'] != $_POST['passconf']) {
         echo("Neatitinka slaptazodziai.");
     } else {
-        $_POST['pass'] = md5($_POST['pass']);
-        $imagename=$_FILES["myimage"]["name"]; 
-        $imagetmp=addslashes (file_get_contents($_FILES['myimage']['tmp_name']));
-        $usql = "UPDATE users SET name ='".$_POST['vrd']."', surename = '" . $_POST['pvd'] . "', email = '" . $_POST['email'] . "', city = '" . $_POST['city'] . "', age = '" . $_POST['amz'] . "', password = '" . $_POST['pass'] . "', gender = '" . $_POST['lyt'] . "',image = '" . $imagetmp . "',image_text = '" . $imagename . "' where id = '" . $data['id']. "'";
-        $result= mysqli_query($conn, $usql);
-        if($result) {
-                echo "Atnaujinta";
-        } else {
-                echo "KLAIDA!! NEIKELTA $usql. " . mysqli_error($conn);
+            if($_FILES['myimage']['error'] == 0){
+                $_POST['pass'] = md5($_POST['pass']);
+                $imagename=$_FILES["myimage"]["name"]; 
+                $imagetmp=addslashes (file_get_contents($_FILES['myimage']['tmp_name']));
+                $usql = "UPDATE users SET name ='".$_POST['vrd']."', surename = '" . $_POST['pvd'] . "', email = '" . $_POST['email'] . "', city = '" . $_POST['city'] . "', age = '" . $_POST['amz'] . "', password = '" . $_POST['pass'] . "', gender = '" . $_POST['lyt'] . "',image = '" . $imagetmp . "',image_text = '" . $imagename . "' where id = '" . $data['id']. "'";
+                $result= mysqli_query($conn, $usql);
+
+            } else {
+                $_POST['pass'] = md5($_POST['pass']);
+                $usql = "UPDATE users SET name ='".$_POST['vrd']."', surename = '" . $_POST['pvd'] . "', email = '" . $_POST['email'] . "', city = '" . $_POST['city'] . "', age = '" . $_POST['amz'] . "', password = '" . $_POST['pass'] . "', gender = '" . $_POST['lyt'] . "' where id = '" . $data['id']. "'";
+                $result= mysqli_query($conn, $usql);
         }   
     }
 }
