@@ -19,7 +19,8 @@ if (isset($_GET['ID'])) {
 <div class="textPad">
     <form action="" method="POST">
         <input type="text" name="title" value="<?php echo (! empty($row['title']) ? $row['title'] : ''); ?>">
-        <textarea name="content" id="content" rows="20" cols="43" value="" ><?php echo (! empty($row['content']) ? $row['content'] : ''); ?></textarea>
+        <textarea name="content" id="content" rows="20" cols="48" value="" ><?php echo (! empty($row['content']) ? $row['content'] : ''); ?></textarea>
+        <input type="file" name="myimage" class="inputFile">
         <div class="mygtukas">
             <button type="submit">ATNAUJINTI</button>
         </div>
@@ -45,3 +46,28 @@ if (!empty($_POST)) {
 
        
 ?>
+<?php
+
+// if (!empty($imagename)) {
+//     $imagename=$_FILES["myimage"]["name"]; 
+//     $date=date("Y-m-d");
+//     $imagetmp=addslashes (file_get_contents($_FILES['myimage']['tmp_name']));
+//     $title=mysqli_real_escape_string($conn, $_POST['title']);
+//     $content=mysqli_real_escape_string($conn, $_POST['content']);
+//     $usql = "UPDATE blogs SET (title, content, date, image, image_text) VALUES('$title', '$content', '$date', '$imagetmp', '$imagename') where post_id ='". $row['post_id']."'";
+//     mysqli_query($conn, $usql);
+//     header('Location: index.php');
+//     } else {
+//         $date=date("Y-m-d");
+//         $title=mysqli_real_escape_string($conn, $_POST['title']);
+//         var_dump ($title);
+//         $content=mysqli_real_escape_string($conn, $_POST['content']);
+//         $usql = "UPDATE blogs SET (title, content, date) VALUES('$title', '$content', '$date') where post_id ='". $row['post_id']."'";
+//         mysqli_query($conn, $usql);
+//         header('Location: index.php');
+//     }
+
+
+mysqli_close($conn);
+?>
+

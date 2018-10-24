@@ -386,7 +386,7 @@ body {
     text-decoration: none;
     color: #fff;
     display: block;
-    transition: .5s;
+    transition: .2s;
   }
    
   .nav a:hover {
@@ -464,11 +464,17 @@ body {
     .navh {
         display: none;
     } 
+    .myposts {
+        position: relative;
+        bottom: -50px;
+        width: 61%;
+    }
  }
  @media only screen and (max-width: 1023px) {
         .nav ul {
         display: none;
     }
+    
 }
 
 
@@ -484,6 +490,11 @@ body {
     }
     .userinfo {
         width: 40%;
+    }
+    .myposts {
+        position: relative;
+        bottom: 20px;
+        width: 90%;
     }
 }    
 @media only screen and (max-width: 425px) {
@@ -502,6 +513,11 @@ body {
         width: 60%;
         margin-top: 30px; 
     }
+    .myposts {
+        position: relative;
+        bottom: 20px;
+        width: 90%;
+    }
 }    
 @media only screen and (max-width: 320px) {
     .feed-box:nth-child(1n) {
@@ -512,6 +528,11 @@ body {
     }
     .users {
         width: 95%;   
+    }
+    .myposts {
+        position: relative;
+        bottom: 20px;
+        width: 90%;
     }
     .userinfo {
         width: 90%;
@@ -890,8 +911,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .photosize {
-    width: 60%;
-    height: 60%;
+    width: 100%;
+    height: auto;
 }
 
 .delete {
