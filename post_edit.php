@@ -52,16 +52,15 @@ if (!empty($_POST)) {
 //     $imagename=$_FILES["myimage"]["name"]; 
 //     $date=date("Y-m-d");
 //     $imagetmp=addslashes (file_get_contents($_FILES['myimage']['tmp_name']));
-//     $title=mysqli_real_escape_string($conn, $_POST['title']);
-//     $content=mysqli_real_escape_string($conn, $_POST['content']);
+//     $title=($_POST['title']);
+//     $content=($_POST['content']);
 //     $usql = "UPDATE blogs SET (title, content, date, image, image_text) VALUES('$title', '$content', '$date', '$imagetmp', '$imagename') where post_id ='". $row['post_id']."'";
 //     mysqli_query($conn, $usql);
 //     header('Location: index.php');
 //     } else {
 //         $date=date("Y-m-d");
-//         $title=mysqli_real_escape_string($conn, $_POST['title']);
-//         var_dump ($title);
-//         $content=mysqli_real_escape_string($conn, $_POST['content']);
+//         $title = $_POST['title'] ?? '';
+//         $content= $_POST['content'] ?? '';
 //         $usql = "UPDATE blogs SET (title, content, date) VALUES('$title', '$content', '$date') where post_id ='". $row['post_id']."'";
 //         mysqli_query($conn, $usql);
 //         header('Location: index.php');
