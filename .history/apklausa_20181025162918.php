@@ -124,7 +124,11 @@ if (!empty($_POST)){
         $sql = "INSERT INTO projectx (user_ip, name, content, phoneatm, phonechange, age, favbrand, gender, whychange)
         VALUES('$ip', '$name', '$content', '$phoneatm', '$phonechange', '$age', '$city', '$gender', '$whychange')";     
        
-       }
+       } if(mysqli_query($conn, $sql)){
+            echo "Ikelta.";
+        } else {
+            echo "KLAIDA!! NEIKELTA $sql. " . mysqli_error($conn);
+        }
     }
     mysqli_close($conn);
 }
