@@ -1,12 +1,12 @@
 
 <?php
 include 'config.php';
-include 'sessionCheck.php';
+// include 'sessionCheck.php';
 
 $sql = "SELECT post_id, user_id, title, date, timestamp, image, image_text, content FROM blogs ORDER BY timestamp DESC";
 $result = mysqli_query($conn, $sql);
 ?>
-
+<?php header( "refresh:30;url=index.php" ); ?>
 <div class="feed">
     <?php if (mysqli_num_rows($result) > 0) { ?>
         <?php while ($post = mysqli_fetch_assoc($result)) { ?>
@@ -45,3 +45,4 @@ $result = mysqli_query($conn, $sql);
         0 results
     <?php } ?>
 </div>
+

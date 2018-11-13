@@ -173,3 +173,16 @@ for (var xi = 0; xi < btn.length; xi++) {
    });
 
 }
+
+// portfolio
+
+
+
+8
+down vote
+$(document).ready(function() {
+  $.ajaxSetup({ cache: false }); // This part addresses an IE bug.  without it, IE will only load the first number and will never refresh
+  setInterval(function() {
+    $('#notice_div').load('response.php');
+  }, 3000); // the "3000" 
+});

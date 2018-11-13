@@ -173,3 +173,11 @@ for (var xi = 0; xi < btn.length; xi++) {
    });
 
 }
+
+
+function update() {
+  $.get("response.php", function(data) {
+    $("#feed").html(data);
+    window.setTimeout(update, 10000);
+  });
+}
