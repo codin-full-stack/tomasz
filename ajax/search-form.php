@@ -21,6 +21,7 @@
         <div class="box-bottom">
             <button type="submit" name="doLogin" class="sigin">SignIn</button>
         </div>
+        <p id="result"></p>
     </form> 
 </div>
 
@@ -72,25 +73,22 @@ var form = document.querySelector('.ajaxForm');
 form.addEventListener('submit', function(e){
     e.preventDefault();
 
+    document.getElementById("result").innerHTML = '';
+    
     var data = serialize(form);
 
     postAjax('dump.php', data, function(response){
         var json = JSON.parse(response);
-        // alert('Labas, ' + json.vrd);
-        console.log(json);
-        
+
+        for (let i = 0; i < json.length; i++) {
+            var names = json[i].name;
+            var email = json[i].email;
+            
+            document.getElementById("result").innerHTML += "Vardas :" + names +"<br>" +"Email: " +  email + "<br><br>";
+        }
+
     });
 });
 
-// $.ajax({
-//                 type: "POST",
-//                 url: "dump.php",
-//                 data: ;
-//                 success function(json_data){
-//                     var data_array = $.parseJSON(json_data);
 
-//                     var rtrn = data_array['returnArr'];.
-//                     console.log(rtrn);
-//                 }
-//             });
 </script>

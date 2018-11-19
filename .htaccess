@@ -1,0 +1,24 @@
+RewriteEngine on
+# If requested resource exists as a file or directory go to it
+ErrorDocument 404 /tomasz/index.php
+
+# Rewrite for projects.php
+RewriteRule ^Calculator$ calc.php [NC,L]
+RewriteRule ^Home$ index.php [NC,L]
+RewriteRule ^LogIn$ login.php [NC,L]
+RewriteRule ^UserSearch$ paieska.php [NC,L]
+RewriteRule ^AllUsers$ allRegisteredList.php [NC,L]
+RewriteRule ^MyProfile$ userInfo.php [NC,L]
+RewriteRule ^ChangeInfo$ infoChange.php [NC,L]
+RewriteRule ^NewPost$ post_new.php [NC,L]
+
+
+# NC makes the rule non case sensitive
+# L makes this the last rule that this specific condition will match
+# $ in the regular expression makes the matching stop so that "customblah" will not work
+
+# Rewrite for user.php?u=xxxxx
+RewriteRule ^post/([0-9a-zA-Z]+)$ post.php?ID=$1 [NC,L]
+
+# Rewrite for article.php?id=1&title=Title-Goes-Here
+RewriteRule ^article/([0-9]+)/([0-9a-zA-Z_-]+)$ article.php?id=$1&title=$2 [NC,L]
