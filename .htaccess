@@ -18,7 +18,9 @@ RewriteRule ^NewPost$ post_new.php [NC,L]
 # $ in the regular expression makes the matching stop so that "customblah" will not work
 
 # Rewrite for user.php?u=xxxxx
-RewriteRule ^post/([0-9a-zA-Z]+)$ post.php?ID=$1 [NC,L]
+# RewriteRule ^post/([0-9a-zA-Z]+)$ post.php?ID=$1 [NC,L]
 
 # Rewrite for article.php?id=1&title=Title-Goes-Here
 RewriteRule ^article/([0-9]+)/([0-9a-zA-Z_-]+)$ article.php?id=$1&title=$2 [NC,L]
+
+RewriteRule ^post/([0-9]+)/([0-9a-zA-Z_-]+)(.*)$ post.php?ID=$1&title=$2 [NC,L] 

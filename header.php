@@ -2,6 +2,7 @@
 session_start();
 // include('sessionCheck.php');
 include('jsonFunctions.php');
+include 'config.php';
 ?>
 
 <!DOCTYPE html>
@@ -22,9 +23,9 @@ include('jsonFunctions.php');
     ?>
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css" type="text/css">                   
+    <link rel="stylesheet" type="text/css" href="<?php echo $baseUrl; ?>styles/styles.css">                   
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <script src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="<?php echo $baseUrl; ?>js/jquery-1.12.4.min.js"></script>
 
 </head>
 <header>

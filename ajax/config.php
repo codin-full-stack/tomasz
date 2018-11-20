@@ -13,4 +13,6 @@ if (!$conn) {
 }
 // echo "Connected successfully";
 
+$baseUrl = 'http://localhost/tomasz/';
+
 ?>
