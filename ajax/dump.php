@@ -1,6 +1,8 @@
 <?php
 include 'config.php';
 
+
+
 $sql = "SELECT * FROM users";
 $result = mysqli_query($conn, $sql);
 $returnArr = [];
@@ -18,6 +20,8 @@ $returnArr = [];
         ];
     }
     echo json_encode($returnArr);
+
+
   
 mysqli_close($conn);
 exit;
