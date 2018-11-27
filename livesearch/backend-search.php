@@ -14,7 +14,7 @@ try{
         // create prepared statement
         $sql = "SELECT * FROM blogs WHERE title LIKE :term or content like :term";
         $stmt = $pdo->prepare($sql);
-        $term = $_REQUEST['term'] . '%';
+        $term = '%' . $_REQUEST['term'] . '%';
         // bind parameters to statement
         $stmt->bindParam(':term', $term);
         // execute the prepared statement
